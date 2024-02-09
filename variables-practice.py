@@ -72,3 +72,17 @@ print('Hello,',username)
 login = input('Enter your login: ')
 lang = input('Enter your native language: ')
 print('Your login is', login ,'and you speak', lang)
+
+# Here's some typecasting
+
+hours_worked = float(input('How many hours did you work last month? '))
+hourly_rate = float(input('What is your hourly rate? '))
+print('Last month, you earned '+ '$' + str(hourly_rate * hours_worked) )
+
+# Keyword/Named Arguments
+print('Hello, World!')
+print('I\'ve started my python journey')
+# This will print on different lines as a new line arguement is default
+
+print('Hello, World!', end='.') #end argument to specify the end of the line
+print('I\'ve started my python journey')
