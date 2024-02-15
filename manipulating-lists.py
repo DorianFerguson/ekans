@@ -78,12 +78,10 @@
 # completes the inner loop comprehension until the outer loop comp, is complete
 
 #======= LIST CAT =======
-left_list = [1, 2, 3]
+left_list = [1, 2, 3, 4]
 right_list = [5, 6, 7, 8]
 whole_list = left_list + right_list
 print(whole_list)
 
 use_list = [8, 8] * 8
 print(use_list)
-
-print(left_list[-2:-1])
