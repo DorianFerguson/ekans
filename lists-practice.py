@@ -43,3 +43,6 @@ rainbow = ['Red', 'Orange', 'Yellow', 'Blue']
 print(rainbow)
 rainbow.insert(3,'Green') # assumes specified index, pushes everything right
 print(rainbow)
+
+print(dir(rainbow)) # shows a bunch of hidden attributes, also shows
+# possible fuctions that can be used with object, not all
