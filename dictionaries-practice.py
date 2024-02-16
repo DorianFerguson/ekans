@@ -60,3 +60,9 @@ while True:
     else:
         print('No match!')
 print('Bye!')
+
+#print sample_dict.items() #retruns tuples with the key value pairs
+# for k, v in sample_dict.tems()
+#    print (k, v) # prints the key value pairs in vertical list
+#    for i in value:
+#        print(i)
