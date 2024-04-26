@@ -26,4 +26,16 @@ def get_dir_dict(dir_path=''):  # Define a function to get details of files with
 
     return dir_dict  # Return the directory dictionary containing file and subdirectory details
 
-print(get_dir_dict('example/path'))  # Call the function to get details of files within the specified directory and print the resulting dictionary
+# ===== The print funtion is here to make the dictionary easily readable, e.g. it's passed the dictionary created by get_dir_dict =====
+def print_dir_dict(dir_dict, indent=0): # Define a function to print directory details
+    for key, value in dir_dict.items(): # Iterate through each key-value pair in the directory dictionary
+        if isinstance(value, dict): # If the value is a dictionary (subdirectory)
+            print(' ' * indent + f'{key}/') # Print the subdirectory name with appropriate indentation
+            print_dir_dict(value, indent + 1) # Recursively call the function to print the subdirectory contents
+        else: # If value is a file
+            print(' ' * indent + f'{key}: {value}') # Print the file name and its details with appropriate indentation
+
+
+
+dir_dict = (get_dir_dict(''))  # Call the function to get details of files within the specified directory
+print_dir_dict(dir_dict) # Print the resulting dictionary in an easily readable format
